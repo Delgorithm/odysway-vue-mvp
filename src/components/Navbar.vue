@@ -18,5 +18,3 @@
     </section>
   </nav>
 </template>
-
-<style scoped></style>

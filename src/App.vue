@@ -24,7 +24,7 @@ const currentView = computed(() => {
 })
 </script>
 
-<template>
+<template class="h-full">
   <!-- <a href="#">Home</a>
   <a href="#/article">Article</a> -->
   <Navbar />
