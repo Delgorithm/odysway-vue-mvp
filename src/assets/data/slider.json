@@ -1,0 +1,70 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "url": "frances-gunn-QcBAZ7VREHQ-unsplash.jpg",
+      "alt": "Séjour à la ferme",
+      "title": "Séjour à la ferme"
+    },
+    {
+      "id": 2,
+      "url": "tim-swaan-eOpewngf68w-unsplash-min.jpg",
+      "alt": "Sport",
+      "title": "Sport"
+    },
+    {
+      "id": 3,
+      "url": "mylon-ollila-j4ocWYAP_cs-unsplash-min.jpg",
+      "alt": "Animaux",
+      "title": "Animaux"
+    },
+    {
+      "id": 4,
+      "url": "berend-leupen-azhGVsF0FUs-unsplash-min.jpg",
+      "alt": "Chez l'habitant",
+      "title": "Chez l'habitant"
+    },
+    {
+      "id": 5,
+      "url": "tyler-lastovich-fBTjWhzTDL0-unsplash-min.jpg",
+      "alt": "Survie",
+      "title": "Survie"
+    },
+    {
+      "id": 6,
+      "url": "ben-guerin-NWrye3NRrKw-unsplash-min.jpg",
+      "alt": "Nature",
+      "title": "Nature"
+    },
+    {
+      "id": 7,
+      "url": "ian-rinefort-HiBD6OGlSmE-unsplash-min.jpg",
+      "alt": "Astornomie",
+      "title": "Astronomie"
+    },
+    {
+      "id": 8,
+      "url": "jared-rice-NTyBbu66_SI-unsplash-min.jpg",
+      "alt": "Voyage initiaque",
+      "title": "Voyage initiaque"
+    },
+    {
+      "id": 9,
+      "url": "sam-williams-UuGAw6nF0Vw-unsplash-min.jpg",
+      "alt": "Séjour culturel",
+      "title": "Séjour culturel"
+    },
+    {
+      "id": 10,
+      "url": "nicolas-lobos-xc1a9UD41cw-unsplash-min.jpg",
+      "alt": "Aventure",
+      "title": "Aventure"
+    },
+    {
+      "id": 11,
+      "url": "hichem-meghachou-7I-Rj_E9ihI-unsplash-min.jpg",
+      "alt": "Randonée",
+      "title": "Randonée"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "firstActivities": [
+    {
+      "id": 1,
+      "url": "OOzgsubRRRiMprrkTtng-min.jpeg",
+      "alt": "Berger dans les Pyrénées",
+      "location": "Sud Ouest -",
+      "duration": "5 jours",
+      "title": "Vis ma vie de berger dans les Pyrénées",
+      "pricing": "615€"
+    },
+    {
+      "id": 2,
+      "url": "aUfx5rXLQqiRHbypIpXN-min.jpeg",
+      "alt": "Découvrez l'art de la photo animalière dans le Jura",
+      "location": "Jura -",
+      "duration": "6 jours",
+      "title": "Découvrez l'art de la photo animalière dans le Jura",
+      "pricing": "960€"
+    },
+    {
+      "id": 3,
+      "url": "pCXDSw0RQzDvzeHDTA3G-min.jpeg",
+      "alt": "Immersion au coeur d'un observatoire astronomique",
+      "location": "Alpes -",
+      "duration": "5 jours",
+      "title": "Immersion au coeur d'un observatoire astronomique",
+      "pricing": "615€"
+    },
+    {
+      "id": 4,
+      "url": "ccWSJ8gpTDukRDoykVcZ-min.jpeg",
+      "alt": "En immersion avec un photographe animalier dans les Vosges",
+      "location": "Vosges -",
+      "duration": "4 jours",
+      "title": "Vis ma vie de berger dans les Pyrénées",
+      "pricing": "795"
+    },
+    {
+      "id": 5,
+      "url": "pCXDSw0RQzDvzeHDTA3G-min.jpeg",
+      "alt": "Initiation à l'observation astronomique en Corse",
+      "location": "Corse -",
+      "duration": "5 jours",
+      "title": "Initiation à l'observation astronomique en Corse",
+      "pricing": "275€"
+    },
+    {
+      "id": 6,
+      "url": "AQQo6edRvy2I5akc3ns1-min.jpeg",
+      "alt": "Viticultrice et souffleur de verre, rencontrez les artisans lorrains",
+      "location": "Vosges -",
+      "duration": "5 jours",
+      "title": "Viticultrice et souffleur de verre, rencontrez les artisans lorrains",
+      "pricing": "295€"
+    }
+  ],
+
+  "secondActivities": [
+    {
+      "id": 1,
+      "url": "xKaHUfWTQwes3RCnlr5J-min.jpeg",
+      "alt": "Trek chez l'habitant au Népal, au fil des villages Sherpas",
+      "location": "Népal -",
+      "duration": "14 jours",
+      "title": "Trek chez l'habitant au Népal, au fil des villages Sherpas",
+      "pricing": "1 330€"
+    },
+    {
+      "id": 2,
+      "url": "AQQo6edRvy2I5akc3ns1-min.jpeg",
+      "alt": "Voyage en terre chamane en Mongolie",
+      "location": "Mongolie -",
+      "duration": "13 jours",
+      "title": "Voyage en terre chamane en Mongolie",
+      "pricing": "1 880€"
+    },
+    {
+      "id": 3,
+      "url": "DrBd8tzTdqBuoQDZSICy-min.jpeg",
+      "alt": "Séjour multi-activités en Laponie falandaise",
+      "location": "Finlande -",
+      "duration": "8 jours",
+      "title": "Séjour multi-activités en Laponie falandaise",
+      "pricing": "2 430€"
+    },
+    {
+      "id": 4,
+      "url": "EGNwnNRnTMCEuTq6bj45-min.jpeg",
+      "alt": "Immersion au sein d'une famille nomade en Mongolie",
+      "location": "Mongolie -",
+      "duration": "12 jours",
+      "title": "Immersion au sein d'une famille nomade en Mongolie",
+      "pricing": "1 565€"
+    },
+    {
+      "id": 5,
+      "url": "uJW4q897QZCJkjGemdkT-min.jpeg",
+      "alt": "Occupez-vous des animeaux de la jungle au Costa Rica",
+      "location": "Sud Ouest -",
+      "duration": "11 jours",
+      "title": "Occupez-vous des animeaux de la jungle au Costa Rica",
+      "pricing": "1 220€"
+    },
+    {
+      "id": 6,
+      "url": "OOzgsubRRRiMprrkTtng-min.jpeg",
+      "alt": "Berger dans les Pyrénées",
+      "location": "Sud Ouest -",
+      "duration": "5 jours",
+      "title": "Vis ma vie de berger dans les Pyrénées",
+      "pricing": "615€"
+    }
+  ]
+}

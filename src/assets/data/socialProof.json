@@ -1,0 +1,35 @@
+{
+  "blogPart": [
+    {
+      "quote": "Le vrai voyage de découverte ne consiste pas à chercher de nouveaux paysages, mais à avoir de nouveaux yeux",
+      "firstParagraph": "Comme l'a si bien exprimé Marcel Proust, voyager va au-delà du déplacement géographique. Chez Odysway, cette vision guide notre approche du voyage depuis 2018 : voir le voyage comme un moyen de redéfinir notre perspective, nos croyances, en embrassant la diversité du monde et des autres.",
+      "secondParagraph": "Fondée par des passionnés du voyage à sac à dos, Odysway se donne pour mission de vous faire vivre des expériences uniques. Plus que de simples itinéraires, nous croyons au pouvoir du voyage pour créer des liens profonds, tant avec vous-même qu'avec les locaux que vous rencontrerez."
+    }
+  ],
+
+  "quoteTravelers": [
+    {
+      "firstTravaler": {
+        "firstQuote": "Ce que je recherchais, c’est l’immersion dans la nature, me rapprocher des montagnes pour me déconnecter totalement du quotidien. Pendant ce voyage et au retour, j’ai eu la sensation d’avoir vraiment été vivante ! »",
+        "img": "OOzgsubRRRiMprrkTtng-min.jpeg",
+        "details": "Lire le récit de voyage de Florence :",
+        "secondQuote": "Vis ma vie de berger dans les Pyréenées",
+        "profilPicture": "aiony-haust-3TLl_97HNJo-unsplash.jpg"
+      },
+      "secondTravaler": {
+        "firstQuote": "« Notre voyage en Ouzbékistan nous a permis de découvrir un mode de vie très différent du nôtre. Nous avons pu être au plus proche des locaux en étant hébergés chez eux: l'hospitalité est leur maître-mot. Il y avait un bon équilibre entre la découverte des villes et la campagne. Notre guide Ilyos, très professionnel, ne manquait pas d'humour et nous a fait nous sentir à l'aise dès les premiers instants. Merci Odysway pour l'organisation de ce voyage! »",
+        "img": "EGNwnNRnTMCEuTq6bj45-min.jpeg",
+        "details": "Le voyage de Céline :",
+        "secondQuote": "À la rencontre des habitants de la route de la soie en Ouzbékistan",
+        "profilPicture": "michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+      },
+      "thirdTravaler": {
+        "firstQuote": "Super circuit en Colombie avec une expérience unique sur la dernière étape: une immersion totale dans la nature luxuriante, des plages sauvages où le temps s'arrête. Une déconnexion totale, une vraie rencontre ! Les colombiens sont très accueillants et les guides compétents, motivés, avec l'envie de vous faire aimer leur pays. C'est une réussite et je reviens avec de beaux souvenirs dans la tête. Merci à Romain et Ludovic pour les conseils, l'organisation, le sérieux avec lequel ils ont suivi tout le voyage. Je repartirai sans hésitation avec Odysway pour un prochain voyage »",
+        "img": "aUfx5rXLQqiRHbypIpXN-min.jpeg",
+        "details": "Le voyage de Dominique",
+        "secondQuote": "Voyager en terre inconnue en Colombie",
+        "profilPicture": "joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+      }
+    }
+  ]
+}
