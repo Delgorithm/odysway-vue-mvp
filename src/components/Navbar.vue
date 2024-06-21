@@ -2,7 +2,9 @@
 
 <template>
   <nav class="flex justify-between p-2 mx-4">
-    <img src="../assets/Img/logo_couleur-min.png" alt="Odysway's logo" class="w-32" />
+    <a href="/">
+      <img src="../assets/Img/logo_couleur-min.png" alt="Odysway's logo" class="w-32" />
+    </a>
     <section class="flex gap-6">
       <img
         src="../assets/Img/bf25558b-2a5d-43a2-9e75-2eff32be2ce8.svg"
