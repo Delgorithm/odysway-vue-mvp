@@ -4,7 +4,7 @@ import data from '../assets/data/data.json'
 
 <template>
   <section
-    class="bg-[url('../assets/Img/OOzgsubRRRiMprrkTtng-min.jpeg')] bg-no-repeat bg-origin-padding bg-right-bottom bg-content min-h-[50vh]"
+    class="bg-[url('../assets/Img/OOzgsubRRRiMprrkTtng-min.jpeg')] bg-no-repeat bg-origin-padding bg-right-bottom bg-content min-h-[55vh]"
   >
     <h1 class="text-6xl text-white shadow-sm text-left pt-20">{{ data.heroTitle }}</h1>
   </section>
