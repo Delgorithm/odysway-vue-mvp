@@ -85,7 +85,7 @@ function setActivateState(state) {
         <img
           src="../assets/Img/hI3cO2QQYiahepsX3hwa-min.jpeg"
           alt="First traveller"
-          class="size-16 rounded-full"
+          class="size-16 rounded-full {{ activateState === 'first' ? 'p-2 bg-[#2e8b57]' : null }}"
           @click="setActivateState('first')"
         />
         <img
