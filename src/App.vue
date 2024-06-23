@@ -20,13 +20,11 @@ window.addEventListener('hashchange', () => {
 })
 
 const currentView = computed(() => {
-  return routes[currentPath.value.slice(1) || '/' || NotFound]
+  return routes[currentPath.value.slice(1) || '/']
 })
 </script>
 
 <template class="h-full">
-  <!-- <a href="#">Home</a>
-  <a href="#/article">Article</a> -->
   <Navbar />
   <component :is="currentView" />
 </template>
