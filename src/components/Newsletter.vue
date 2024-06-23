@@ -12,7 +12,7 @@ import newsletter from '../assets/data/newsletter.json'
       method="POST"
       class="flex justify-center pt-8"
     >
-      <label for="email" class="hidden">Email</label>
+      <label for="email" class="hidden">{{ Email }}</label>
       <input
         id="email"
         type="email"
@@ -21,6 +21,8 @@ import newsletter from '../assets/data/newsletter.json'
         placeholder="Votre adresse email"
         class="py-2 px-5 rounded-3xl"
       />
+      <!-- <label for="checkbox">{{ checked }}</label>
+      <input type="checkbox" name="checkbox" id="checkbox" v-model="checked" /> -->
     </form>
   </section>
 </template>
