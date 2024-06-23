@@ -2,9 +2,11 @@
 import { ref } from 'vue'
 import socialProof from '../assets/data/socialProof.json'
 
-const firstState = ref(true)
-const secondState = ref(false)
-const thirdState = ref(false)
+const activeState = ref(null)
+
+function setActivateState(state) {
+  activeState.value = activeState.value === state ? null : state
+}
 </script>
 
 <template>
@@ -25,7 +27,7 @@ const thirdState = ref(false)
       <span class="text-[#2e8b57]">Les mots</span> de nos voyageurs 😍
     </h2>
     <article>
-      <div v-if="firstState">
+      <div v-if="activeState === 'first'">
         <p class="px-5 py-10 text-center">
           {{ socialProof.quoteTravelers[0].firstTraveler.firstQuote }}
         </p>
@@ -43,7 +45,7 @@ const thirdState = ref(false)
           </div>
         </div>
       </div>
-      <div v-if="secondState">
+      <div v-if="activeState === 'second'">
         <p class="px-5 py-10 text-center">
           {{ socialProof.quoteTravelers[0].secondTraveler.firstQuote }}
         </p>
@@ -61,7 +63,7 @@ const thirdState = ref(false)
           </div>
         </div>
       </div>
-      <div v-if="thirdState">
+      <div v-if="activeState === 'third'">
         <p class="px-5 py-10 text-center">
           {{ socialProof.quoteTravelers[0].firstTraveler.firstQuote }}
         </p>
@@ -84,19 +86,19 @@ const thirdState = ref(false)
           src="../assets/Img/hI3cO2QQYiahepsX3hwa-min.jpeg"
           alt="First traveller"
           class="size-16 rounded-full"
-          @click="firstState = !firstState"
+          @click="setActivateState('first')"
         />
         <img
           src="../assets/Img/PuvPCEcEQvaKNOaJNxHY-min.jpeg"
           alt="Second traveller"
           class="size-16 rounded-full"
-          @click="secondState = !secondState"
+          @click="setActivateState('second')"
         />
         <img
           src="../assets/Img/XWtj7pZvTa6Gfwq1uGGn-min.jpeg"
           alt="Third traveller"
           class="size-16 rounded-full"
-          @click="thirdState = !thirdState"
+          @click="setActivateState('third')"
         />
       </div>
     </article>
