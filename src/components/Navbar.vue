@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 const displayModal = ref(false)
+const displayMenu = ref(false)
 </script>
 
 <template>
@@ -19,15 +20,20 @@ const displayModal = ref(false)
       <a href="/registration" class="w-6 hover:rounded-xl hover:bg-gray-100">
         <img src="../assets/Img/048756c9-5947-4b56-8420-5d31d0957cfb.svg" alt="My account" />
       </a>
-      <img src="../assets/Img/51ba6665-d97a-4173-ba49-c9557b013e45.svg" alt="Menu" class="w-6" />
+      <img
+        src="../assets/Img/51ba6665-d97a-4173-ba49-c9557b013e45.svg"
+        alt="Menu"
+        class="w-6"
+        @click="displayMenu = !displayMenu"
+      />
     </section>
   </nav>
 
-  <div
+  <section
     v-if="displayModal"
     class="fixed h-full w-screen bg-slate-700/50 top-0 right-0 flex justify-center items-center"
   >
-    <section class="fixed h-44 w-11/12 bg-white rounded-xl">
+    <article class="fixed h-44 w-11/12 bg-white rounded-xl">
       <form
         id="search"
         @submit="search"
@@ -41,10 +47,10 @@ const displayModal = ref(false)
           type="text"
           v-model="search"
           name="search"
-          placeholder="Rechercher uen destination"
+          placeholder="Rechercher une destination"
           class="py-3 px-20 bg-gray-300/20 border rounded-3xl my-10"
         />
-        <div class="flex">
+        <div class="flex gap-2">
           <button
             class="bg-gray-200 text-black uppercase py-2 px-4 rounded-3xl"
             @click="displayModal = !displayModal"
@@ -56,6 +62,16 @@ const displayModal = ref(false)
           </button>
         </div>
       </form>
-    </section>
-  </div>
+    </article>
+  </section>
+  <section v-if="displayMenu" class="fixed h-full w-8/12 top-0 right-0 shadow-2xl bg-white">
+    <ul class="flex flex-col gap-5 p-3 pt-5 text-[#2e8b57]">
+      <li class="hover:bg-slate-100 p-2"><a href="#">Nos destinations</a></li>
+      <li class="hover:bg-slate-100 p-2"><a href="#">Prochains départs</a></li>
+      <li class="hover:bg-slate-100 p-2"><a href="#">Prendre RDV avec un conseille</a></li>
+      <li class="hover:bg-slate-100 p-2"><a href="#">À propos</a></li>
+      <li class="hover:bg-slate-100 p-2"><a href="#">Carte cadeau</a></li>
+    </ul>
+    <div class="fixed h-full w-4/12 top-0 left-0" @click="displayMenu = !displayMenu"></div>
+  </section>
 </template>
