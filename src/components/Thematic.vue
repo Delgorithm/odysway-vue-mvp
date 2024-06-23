@@ -6,15 +6,13 @@ import 'swiper/css'
 </script>
 
 <template>
-  <section class="py-16 px-8">
-    <h2 class="text-2xl font-semibold">
+  <section class="">
+    <h2 class="text-2xl font-semibold mx-4 my-14">
       Nos thématiques <br /><span class="text-[#2e8b57]">préférées</span>🫶
     </h2>
-    <section
-      class="flex items-center overflow-x-auto whitespace-nowrap scroll-smooth overflow-hidden"
-    >
-      <article v-for="item in slider.activities" :key="item.id" class="py-10">
-        <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" />
+    <section class="flex items-center w-full overflow-hidden bg-blue-500">
+      <article v-for="item in slider.activities" :key="item.id">
+        <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" class="w-full h-auto" />
       </article>
     </section>
     <section class="my-4 mx-10 py-12">
@@ -23,7 +21,7 @@ import 'swiper/css'
       </h2>
       <Swiper>
         <SwiperSlide v-for="item in holidayCarroussel.firstActivities" :key="item.id">
-          <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" class="rounded-lg pt-12" />
+          <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" class="rounded-xl mt-12" />
           <p class="py-2">
             <span class="font-semibold text-[#2e8b57]">{{ item.location }}</span>
             <span class="font-semibold text-[#bc5948] pl-2">{{ item.duration }}</span>
@@ -41,7 +39,7 @@ import 'swiper/css'
       </h2>
       <Swiper>
         <SwiperSlide v-for="item in holidayCarroussel.secondActivities" :key="item.id">
-          <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" class="rounded-lg pt-12" />
+          <img :src="`/src/assets/Img/${item.url}`" :alt="item.alt" class="rounded-lg mt-12" />
           <p class="py-2">
             <span class="font-semibold text-[#2e8b57]">{{ item.location }}</span>
             <span class="font-semibold text-[#bc5948] pl-2">{{ item.duration }}</span>
