@@ -1,9 +1,16 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import Login from '../components/Login.vue'
+import Register from '../components/Register.vue'
 const displayModal = ref(false)
 const displayMenu = ref(false)
 const displayAuth = ref(false)
 const isFixed = ref(false)
+const displayRegistration = ref(null)
+
+function setActivateState(state) {
+  displayRegistration.value = displayRegistration.value === state ? null : state
+}
 
 function handleScroll() {
   isFixed.value = window.scrollY > 0
@@ -105,59 +112,28 @@ onUnmounted(() => {
     class="fixed h-full w-screen flex justify-center items-center bg-black/40 top-0 left-0 z-20"
   >
     <article
-      class="flex flex-col justify-center items-center h-2/3 w-5/6 bg-white fixed rounded-lg z-50"
+      class="flex flex-col justify-center items-center h-5/6 w-5/6 bg-white fixed rounded-lg z-50"
     >
       <article class="flex flex-col justify-center items-center gap-6 w-full">
         <div class="absolute top-0 w-full flex justify-between">
-          <p class="bg-white px-10 py-4">Se connecter</p>
-          <p class="bg-gray-300/20 px-12 py-4">S'inscrire</p>
+          <p class="bg-white px-10 py-4" @click="setActivateState('first')">Se connecter</p>
+          <p class="bg-gray-300/20 px-12 py-4" @click="setActivateState('second')">S'inscrire</p>
         </div>
-        <button
-          class="border py-1.5 pl-2 px-24 rounded-md shadow-md font-medium hover:bg-slate-300"
-        >
-          Se connecter avec Google
-        </button>
-        <div class="flex justify-around w-full items-center px-10">
-          <div class="w-20 h-0.5 bg-gray-200"></div>
-          <p class="text-gray-400">Ou</p>
-          <div class="w-20 h-0.5 bg-gray-200"></div>
-        </div>
-        <form
-          id="authentification"
-          action="#"
-          method="POST"
-          class="flex flex-col justify-center items-center gap-5 w-full"
-        >
-          <label for="email" class="hidden">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Email"
-            class="border py-1.5 pl-2 px-24 rounded-md"
-          />
 
-          <label for="password" class="hidden">Password</label>
-          <input
-            id="password"
-            type="password"
-            name="password"
-            placeholder="Mot de passe"
-            class="border py-1.5 pl-2 px-24 rounded-md"
-          />
-          <div class="flex flex-col text-end">
-            <p class="text-[#2e8b57] font-light underline">Mot de passe oublié ?</p>
-            <div class="flex items-center justify-end gap-5 mt-5">
-              <button class="py-2 px-3 bg-slate-300 uppercase rounded-md">Connexion</button>
-              <p
-                class="py-2 px-3 text-[#bc5948] border border-[#bc5948] uppercase rounded-md hover:bg-[#bc5948]/20"
-                @click="displayAuth = !displayAuth"
-              >
-                Annuler
-              </p>
-            </div>
-          </div>
-        </form>
+        <div v-if="displayRegistration === 'first'">
+          <Login />
+        </div>
+
+        <div v-if="displayRegistration === 'second'">
+          <Register />
+        </div>
+
+        <p
+          class="flex py-2 px-10 text-[#bc5948] border border-[#bc5948] uppercase rounded-md hover:bg-[#bc5948]/20"
+          @click="displayAuth = !displayAuth"
+        >
+          Annuler
+        </p>
       </article>
     </article>
   </section>
