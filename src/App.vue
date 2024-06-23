@@ -1,30 +1,9 @@
 <script setup>
-import { ref, computed } from 'vue'
-import HomeView from './views/HomeView.vue'
-import Article from './views/Article.vue'
-import Registration from './views/Article.vue'
-import Login from './views/Login.vue'
 import Navbar from './components/Navbar.vue'
-
-const routes = {
-  '/': HomeView,
-  '/article': Article,
-  '/registration': Registration,
-  '/login': Login
-}
-
-const currentPath = ref(window.location.hash)
-
-window.addEventListener('hashchange', () => {
-  currentPath.value = window.location.hash
-})
-
-const currentView = computed(() => {
-  return routes[currentPath.value.slice(1) || '/']
-})
+import { RouterView } from 'vue-router'
 </script>
 
 <template class="h-full">
   <Navbar />
-  <component :is="currentView" />
+  <RouterView />
 </template>
